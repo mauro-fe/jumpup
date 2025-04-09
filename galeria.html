@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header_div">
+            <div>
+                <ahref="#"><img class="logo" src="img/logo.png" alt="jogo"></a>
+            </div>
+            <ul>
+                <li><a class="btn-header" href="index.html">Home</a></li>
+                <li><a class="btn-header" href="sobre.html">Sobre o jogo</a></li>
+                <li><a class="btn-header" href="#">Galeria</a></li>
+                <li><a class="btn-header" href="contato.html">Contato</a></li>
+                <li><a class="btn-play" href="jogo.html">Jogar</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main-galeria">
+        <h1>Galeria</h1>
+        <section>
+            <img data-aos="zoom-out-left" class="lightbox" src="img/img1.png" alt="" onclick="openImage(this.src)">
+            <img data-aos="zoom-out-left" class="lightbox" src="img/img2.png" alt="" onclick="openImage(this.src)">
+            <img data-aos="zoom-out-left" class="lightbox" src="img/img3.jpg" alt="" onclick="openImage(this.src)">
+            <img data-aos="zoom-out-left" class="lightbox" src="img/img4.png" alt="" onclick="openImage(this.src)">
+            <img data-aos="zoom-out-left" class="lightbox" src="img/img1.png" alt="" onclick="openImage(this.src)">
+            <img data-aos="zoom-out-left" class="lightbox" src="img/img2.png" alt="" onclick="openImage(this.src)">
+            <img data-aos="zoom-out-left" class="lightbox" src="img/img3.jpg" alt="" onclick="openImage(this.src)">
+            <img data-aos="zoom-out-left" class="lightbox" src="img/img4.png" alt="" onclick="openImage(this.src)">
+            <img data-aos="fade-right" class="lightbox" src="img/img1.png" alt="" onclick="openImage(this.src)">
+            <img data-aos="fade-right" class="lightbox" src="img/img2.png" alt="" onclick="openImage(this.src)">
+            <img data-aos="fade-left" class="lightbox" src="img/img3.jpg" alt="" onclick="openImage(this.src)">
+            <img data-aos="fade-left" class="lightbox" src="img/img4.png" alt="" onclick="openImage(this.src)">
+
+            <div class="overlay" id="overlay">
+                <div class="teste" onclick="closeImage()"><i class="fa-regular fa-circle-xmark"></i></div>
+                <img id="overlayImg">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="#">Mauro Felix</a></p>
+    </footer>
+
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

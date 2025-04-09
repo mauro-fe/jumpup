@@ -1,0 +1,134 @@
+:root {
+    --cor-fundo: #00232e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(img/planoFundo.png) no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.content {
+    max-width: 95%;
+    margin: auto;
+}
+
+.btn-header {
+    border: 2px solid #fff;
+    padding: 7px 10px;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.btn-header:hover {
+    background-color: #121d1a;
+    color: #aaa;
+}
+
+header.scrolled {
+    opacity: 0.7;
+}
+
+header {
+    background-color: var(--cor-fundo);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    .header_div {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100px;
+        /* height: 50px; */
+    }
+
+    div {
+        margin: 0 50px;
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin: 0 20px;
+                transition: all 1s;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    transition: all .5;
+                }
+            }
+
+            li:hover {
+                transform: translate(5px, 5px);
+            }
+        }
+    }
+}
+
+.main-index {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 100px 0;
+    flex-direction: column;
+
+    video {
+        width: 600px;
+        min-height: min-content;
+        background-color: #aaa;
+    }
+
+    article {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.btn-play {
+    background-color: #fff;
+    padding: 5px 10px;
+    width: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+    animation: jogar .8s infinite alternate;
+    color: #000;
+    font-weight: bold;
+}
+
+@keyframes jogar {
+    from {
+        transform: scale(60%);
+    }
+
+    do {
+        transform: scale(120%);
+    }
+}
+
+footer {
+    padding: 50px;
+    background-color: var(--cor-fundo);
+    text-align: center;
+
+    p {
+        a {
+            text-decoration: none;
+            color: #aaa;
+        }
+    }
+}
