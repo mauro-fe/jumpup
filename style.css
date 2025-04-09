@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
     --cor-fundo: #00232e;
 }
@@ -8,9 +10,14 @@
 }
 
 body {
-    background: url(img/planoFundo.png) no-repeat;
+    background: url(img/fundo.png) no-repeat;
     background-size: cover;
+    background-position: center;
     color: white;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 .content {
@@ -35,10 +42,11 @@ header.scrolled {
 }
 
 header {
-    background-color: var(--cor-fundo);
+    background-size: cover;
     position: sticky;
     top: 0;
     z-index: 999;
+    box-shadow: 0px 0px 15px 5px #000;
 
     .header_div {
         display: flex;
@@ -60,7 +68,7 @@ header {
             display: flex;
 
             li {
-                margin: 0 20px;
+                margin: 0 25px;
                 transition: all 1s;
 
                 a {
@@ -79,7 +87,6 @@ header {
 
 .main-index {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     margin: 100px 0;
     flex-direction: column;
@@ -106,8 +113,12 @@ header {
     margin: 0 auto;
     border-radius: 5px;
     animation: jogar .8s infinite alternate;
-    color: #000;
     font-weight: bold;
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
 }
 
 @keyframes jogar {
@@ -120,15 +131,31 @@ header {
     }
 }
 
+/* INICIO RODAPÉ */
 footer {
-    padding: 50px;
-    background-color: var(--cor-fundo);
+    box-shadow: 0 0 15px 5px #000;
+    padding: 75px;
+    /* background: url(img/planoFundo.png) no-repeat;    */
+    background-size: cover;
     text-align: center;
 
+    img {
+        width: 200px;
+    }
+
     p {
+        font-size: 24px;
+
         a {
             text-decoration: none;
+            color: #fff;
+            transition: all .5s;
+        }
+
+        a:hover {
             color: #aaa;
         }
     }
 }
+
+/* FIM RODAPÉ */
