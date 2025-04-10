@@ -22,3 +22,18 @@ function closeImage() {
     document.getElementById('overlay').style.display = 'none';
 }
 // FIM GALERIA
+
+
+//NAV BAR
+
+const navbarIcon = document.getElementById("navbar-icon");
+const navbarDesktop = document.querySelector(".navbar-desktop");
+
+navbarIcon.addEventListener("click", function () {
+    if (navbarDesktop.style.display === "block") {
+        navbarDesktop.style.display = "none"; // Esconde a navbar
+    } else {
+        navbarDesktop.style.display = "block"; // Mostra a navbar
+    }
+
+})

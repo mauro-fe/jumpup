@@ -7,6 +7,7 @@
     <title>Jogo</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
 
 <body>
@@ -16,14 +17,20 @@
                 <ahref="#"><img class="logo" src="img/logo.png" alt="jogo"></a>
             </div>
             <nav>
-                <ul>
-                    <li><a class="btn-header" href="#">Home</a></li>
-                    <li><a class="btn-header" href="sobre.html">Sobre o jogo</a></li>
-                    <li><a class="btn-header" href="galeria.html">Galeria</a></li>
-                    <li><a class="btn-header" href="contato.html">Contato</a></li>
-                </ul>
+                <div class="navbar-desktop">
+                    <ul>
+                        <li><a class="btn-header" href="#">Home</a></li>
+                        <li><a class="btn-header" href="sobre.html">Sobre</a></li>
+                        <li><a class="btn-header" href="galeria.html">Galeria</a></li>
+                        <li><a class="btn-header" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-mobile ">
+                    <i id="navbar-icon" class="fa-solid fa-bars"></i>
+                </div>
             </nav>
         </div>
+
     </header>
     <main class="main-index">
         <video src="video.mp4" controls></video>

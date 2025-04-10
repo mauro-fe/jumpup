@@ -53,17 +53,14 @@ header {
     .header_div {
         display: flex;
         align-items: center;
-    }
-
-    .logo {
-        width: 100px;
-        /* height: 50px; */
-    }
-
-    div {
         margin: 0 50px;
         display: flex;
         justify-content: space-between;
+
+        .logo {
+            width: 100px;
+            /* height: 50px; */
+        }
 
         ul {
             list-style: none;
@@ -84,6 +81,12 @@ header {
                 transform: translate(5px, 5px);
             }
         }
+    }
+
+    .navbar-mobile {
+        display: none;
+        position: absolute;
+        top: 20px;
     }
 }
 
@@ -163,15 +166,39 @@ footer {
             width: 50px;
         }
     }
-
 }
 
 
 @media (max-width: 870px) {
     header {
-        nav {
+        .navbar-desktop {
             display: none;
+
+            ul {
+                font-size: 10px;
+                flex-direction: column;
+                gap: 20px;
+                position: absolute;
+                top: 50px;
+                right: 10px;
+                box-shadow: 0 0 10px 10px #000;
+                padding: 10px;
+
+                li {
+                    a {
+                        border: none;
+                    }
+                }
+            }
         }
+
+
+        .navbar-mobile {
+            display: block;
+            position: absolute;
+            right: 20px;
+        }
+
     }
 
     .main-index {
