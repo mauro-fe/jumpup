@@ -85,10 +85,13 @@ header {
 
     .navbar-mobile {
         display: none;
-        position: absolute;
-        top: 20px;
+    }
+
+    #navbar-icon {
+        display: none;
     }
 }
+
 
 .main-index {
     display: flex;
@@ -173,32 +176,38 @@ footer {
     header {
         .navbar-desktop {
             display: none;
+        }
 
-            ul {
-                font-size: 10px;
-                flex-direction: column;
-                gap: 20px;
-                position: absolute;
-                top: 50px;
-                right: 10px;
-                box-shadow: 0 0 10px 10px #000;
-                padding: 10px;
+        #navbar-icon {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+        }
 
-                li {
-                    a {
-                        border: none;
-                    }
+    }
+
+    .navbar-mobile {
+        position: absolute;
+        right: 10px;
+
+        ul {
+            font-size: 10px;
+            flex-direction: column;
+            gap: 20px;
+            position: absolute;
+            right: 10px;
+            background-color: #0008;
+            box-shadow: 0 0 10px 10px #000;
+            padding: 10px;
+            border-radius: 5px;
+
+            li {
+                a {
+                    border: none;
                 }
             }
         }
-
-
-        .navbar-mobile {
-            display: block;
-            position: absolute;
-            right: 20px;
-        }
-
     }
 
     .main-index {

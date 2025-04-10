@@ -27,7 +27,7 @@ function closeImage() {
 //NAV BAR
 
 const navbarIcon = document.getElementById("navbar-icon");
-const navbarDesktop = document.querySelector(".navbar-desktop");
+const navbarDesktop = document.querySelector(".navbar-mobile");
 
 navbarIcon.addEventListener("click", function () {
     if (navbarDesktop.style.display === "block") {
