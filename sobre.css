@@ -5,17 +5,35 @@
     align-items: center;
 
     h2 {
-        font-size: 30px;
+        font-size: 35px;
+    }
+
+    article:first-child {
+        margin-bottom: 100px;
     }
 
     article {
-        width: 650px;
+        width: 800px;
+        background-color: #0009;
+        padding: 30px;
+        border-radius: 20px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        font-size: 20px;
 
-        .par {
+        h2 {
+            text-align: center;
+        }
+
+        p {
             padding-top: 20px;
-
             margin: 0 auto;
-            font-size: 20px;
+
+        }
+
+        .btn-play {
+            margin: 20px auto;
+
         }
     }
 

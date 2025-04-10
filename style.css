@@ -22,11 +22,6 @@ body {
 
 }
 
-.content {
-    max-width: 95%;
-    margin: auto;
-}
-
 .btn-header {
     border: 2px solid #fff;
     padding: 7px 10px;
@@ -47,7 +42,7 @@ header {
     background-size: cover;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 3;
     box-shadow: 0px 0px 15px 5px #000;
 
     .header_div {
@@ -59,7 +54,6 @@ header {
 
         .logo {
             width: 100px;
-            /* height: 50px; */
         }
 
         ul {
@@ -102,17 +96,30 @@ header {
 
     article {
         text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+
+        h3 {
+            margin: 20px 0;
+        }
+
+        p {
+            margin: 30px 0;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
     }
 
-    a {
-        text-decoration: none;
-    }
+
 }
 
 .btn-play {
     background-color: #fff;
     padding: 5px 10px;
-    width: 40px;
+    max-width: min-content;
     margin: 0 auto;
     border-radius: 5px;
     animation: jogar .8s infinite alternate;
