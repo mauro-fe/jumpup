@@ -181,7 +181,6 @@ footer {
         #navbar-icon {
             display: block;
             position: absolute;
-            top: 20px;
             right: 25px;
             font-size: 20px;
         }
@@ -190,7 +189,8 @@ footer {
 
     .navbar-mobile {
         position: absolute;
-        right: 20px;
+        right: 35px;
+        top: 50px;
 
         ul {
             font-size: 16px;
