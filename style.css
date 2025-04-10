@@ -180,8 +180,6 @@ footer {
 
 
 @media (max-width: 870px) {
-
-
     header {
         .navbar-desktop {
             display: none;
