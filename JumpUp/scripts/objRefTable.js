@@ -23,6 +23,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Acts.ResetEventVar,
 		C3.Plugins.Audio.Acts.StopAll,
+		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Behaviors.Platform.Cnds.OnFall,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Behaviors.Platform.Cnds.OnJump,
