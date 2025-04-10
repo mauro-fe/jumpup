@@ -1,0 +1,11 @@
+.main-jogo {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 150px;
+
+    iframe {
+        width: 900px;
+        height: 507px;
+    }
+}
