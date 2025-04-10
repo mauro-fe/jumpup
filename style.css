@@ -9,6 +9,7 @@
     padding: 0;
 }
 
+
 body {
     background: url(img/fundo.png) no-repeat;
     background-size: cover;
@@ -18,6 +19,7 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+
 }
 
 .content {

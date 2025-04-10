@@ -55,3 +55,31 @@
     top: -270px;
     font-size: 25px;
 }
+
+@media (max-width: 1500px) {
+    .main-galeria {
+        section {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .main-galeria {
+        section {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+}
+
+@media (max-width: 700px) {
+    .main-galeria {
+        section {
+            grid-template-columns: 100%;
+        }
+
+    }
+}

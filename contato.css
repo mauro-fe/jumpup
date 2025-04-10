@@ -48,3 +48,23 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .main-contato {
+        form {
+            width: 90%;
+
+            h2 {
+                font-size: 16px;
+            }
+
+            label,
+            input,
+            textarea {
+                width: 50%;
+            }
+        }
+
+
+    }
+}
