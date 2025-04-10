@@ -173,6 +173,8 @@ footer {
 
 
 @media (max-width: 870px) {
+
+
     header {
         .navbar-desktop {
             display: none;
@@ -187,10 +189,15 @@ footer {
 
     }
 
+    .navbar-mobile.active {
+        display: block;
+    }
+
     .navbar-mobile {
         position: absolute;
         right: 50px;
         top: 50px;
+
 
         ul {
             font-size: 16px;
@@ -210,6 +217,7 @@ footer {
             }
         }
     }
+
 
     .main-index {
         video {

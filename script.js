@@ -27,13 +27,15 @@ function closeImage() {
 //NAV BAR
 
 const navbarIcon = document.getElementById("navbar-icon");
-const navbarDesktop = document.querySelector(".navbar-mobile");
+const navbarMobile = document.querySelector(".navbar-mobile");
 
 navbarIcon.addEventListener("click", function () {
-    if (navbarDesktop.style.display === "block") {
-        navbarDesktop.style.display = "none"; // Esconde a navbar
-    } else {
-        navbarDesktop.style.display = "block"; // Mostra a navbar
-    }
+    navbarMobile.classList.toggle("active");
 
 })
+
+window.addEventListener("resize", function () {
+    if (window.innerWidth >= 870) {
+        menuMobile.classList.remove("active");
+    }
+});
