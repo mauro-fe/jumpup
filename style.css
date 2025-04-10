@@ -91,11 +91,6 @@ header {
     margin: 100px 0;
     flex-direction: column;
 
-    video {
-        width: 600px;
-        min-height: min-content;
-        background-color: #aaa;
-    }
 
     article {
         text-align: center;
@@ -159,3 +154,28 @@ footer {
 }
 
 /* FIM RODAPÉ */
+
+@media (max-width: 500px) {
+    header {
+        .logo {
+            width: 50px;
+        }
+    }
+
+}
+
+
+@media (max-width: 870px) {
+    header {
+        nav {
+            display: none;
+        }
+    }
+
+    .main-index {
+        video {
+            width: 90%;
+        }
+    }
+
+}
