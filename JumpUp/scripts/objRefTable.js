@@ -19,11 +19,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Spritefont2,
 		C3.Plugins.Audio,
 		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Audio.Acts.StopAll,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Acts.ResetEventVar,
-		C3.Plugins.Audio.Acts.StopAll,
 		C3.Behaviors.Platform.Cnds.OnFall,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Behaviors.Platform.Cnds.OnJump,
@@ -127,6 +127,7 @@ self.C3_JsPropNameTable = [
 	{Sprite4: 0},
 	{Pontuacao: 0},
 	{Áudio: 0},
+	{Texto9: 0},
 	{velocidade: 0},
 	{alturaPersonagem: 0},
 	{Pontos: 0}
@@ -186,5 +187,6 @@ self.InstanceType = {
 	FonteDeSprites2: class extends self.ISpriteFontInstance {},
 	Sprite4: class extends self.ISpriteInstance {},
 	Pontuacao: class extends self.ITextInstance {},
-	Áudio: class extends self.IInstance {}
+	Áudio: class extends self.IInstance {},
+	Texto9: class extends self.ITextInstance {}
 }
