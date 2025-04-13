@@ -1,5 +1,5 @@
 // COMEÇO HEADER
-// Fazer scroll suave
+// Fazer scroll suave do header
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
@@ -10,19 +10,6 @@ window.addEventListener("scroll", () => {
     }
 });
 // FIM HEADER
-
-// COMEÇO GALERIA
-// Função para abrir a imagem da galeria
-function openImage(src) {
-    document.getElementById('overlay').style.display = 'flex';
-    document.getElementById('overlayImg').src = src;
-}
-// Função para fechar a imagem da galeria
-function closeImage() {
-    document.getElementById('overlay').style.display = 'none';
-}
-// FIM GALERIA
-
 
 //NAV BAR
 
