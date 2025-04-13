@@ -190,6 +190,12 @@ footer {
         }
     }
 
+    .main-index {
+        img {
+            width: 80%;
+        }
+    }
+
     footer {
         padding: 40px 0;
 
