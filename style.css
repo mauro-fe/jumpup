@@ -102,15 +102,14 @@ header {
     margin-top: 100px;
     margin-bottom: 200px;
 
+    img {
+        width: 50%;
+    }
 
     .title {
         margin-top: 80px;
         margin-bottom: 20px;
-    }
-
-    video {
-        width: 100%;
-        border-radius: 15px;
+        font-size: 30px;
     }
 
     article {
@@ -170,10 +169,6 @@ footer {
     background-size: cover;
     text-align: center;
 
-    img {
-        width: 200px;
-    }
-
     p {
         font-size: 24px;
 
@@ -191,36 +186,13 @@ footer {
 
 /* FIM RODAPÉ */
 
-@media (max-width: 500px) {
-
-    .title {
-        background-color: #0005;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 2px 2px #fff;
-    }
-
-    header {
-        .logo {
-            width: 50px;
-        }
-    }
-
+@media (max-width: 1300px) {
     .main-index {
         img {
             width: 80%;
         }
     }
-
-    footer {
-        padding: 40px 0;
-
-        p {
-            font-size: 16px;
-        }
-    }
 }
-
 
 @media (max-width: 870px) {
     header {
@@ -262,13 +234,44 @@ footer {
 
 
     .main-index {
+
         article {
             font-size: 14px;
             width: 80%;
         }
+    }
+}
 
-        video {
-            width: 90%;
+@media (max-width: 500px) {
+
+    .main-index {
+        .title {
+            background-color: #0005;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px #fff;
+            font-size: 20px;
+        }
+
+    }
+
+    header {
+        .logo {
+            width: 50px;
+        }
+    }
+
+    .main-index {
+        img {
+            width: 80%;
+        }
+    }
+
+    footer {
+        padding: 40px 0;
+
+        p {
+            font-size: 16px;
         }
     }
 }

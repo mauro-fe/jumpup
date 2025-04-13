@@ -50,6 +50,7 @@ footer {
     .main-sobre {
         h2 {
             line-height: 35px;
+            font-size: 26px !important;
         }
 
         article {
@@ -61,4 +62,14 @@ footer {
 
 
     }
+}
+
+@media (max-width: 500px) {
+    .main-sobre {
+        h2 {
+            line-height: 35px;
+            font-size: 20px !important;
+        }
+    }
+
 }
