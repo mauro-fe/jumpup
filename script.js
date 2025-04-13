@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
 });
 // FIM HEADER
 
-//NAV BAR
+// INICIO NAVBAR
 
 const navbarIcon = document.getElementById("navbar-icon");
 const navbarMobile = document.querySelector(".navbar-mobile");
@@ -23,6 +23,74 @@ navbarIcon.addEventListener("click", function () {
 
 window.addEventListener("resize", function () {
     if (window.innerWidth >= 870) {
-        menuMobile.classList.remove("active");
+        navbarMobile.classList.remove("active");
     }
+});
+
+// FIM NAVBAR
+
+// COMEÇO CONTATO
+
+let inputName = document.querySelector("#nome");
+let inputEmail = document.querySelector("#email");
+let inputTel = document.querySelector("#tel");
+let inputText = document.querySelector("#msg");
+let btnEnviar = document.querySelector(".btnEnviar");
+let btnLimpar = document.querySelector("btnLimpar")
+let dadosEnviados = document.querySelector(".dadosEnviados");
+let preenchaCampos = document.querySelector(".preenchaCampos");
+let emailInvalido = document.querySelector(".emailInvalido");
+
+// Funcão para validar os input
+btnEnviar.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // Expressão regular para validar e-mail
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (inputName.value === "" || inputEmail.value === "" || inputTel.value === "") {
+        preenchaCampos.classList.add("invalido")
+        setTimeout(function () {
+            preenchaCampos.classList.remove("invalido")
+        }, 2000)
+    } else if (!regex.test(inputEmail.value)) {
+        emailInvalido.classList.add("invalido")
+        setTimeout(function () {
+            emailInvalido.classList.remove("invalido")
+        }, 2000)
+    } else {
+        dadosEnviados.classList.add("valido")
+        setTimeout(function () {
+            dadosEnviados.classList.remove("valido")
+            inputName.value = "";
+            inputEmail.value = "";
+            inputTel.value = "";
+            inputText.value = "";
+        }, 2000)
+    }
+})
+
+btnLimpar.addEventListener("click", function (e) {
+    e.preventDefault();
+    inputName.value = "";
+    inputEmail.value = "";
+    inputTel.value = "";
+    inputText.value = "";
+})
+
+inputTel.addEventListener("input", function () {
+
+    // Remove tudo que não é número
+    let valor = inputTel.value.replace(/\D/g, '');
+
+    // Limita a 11 dígitos
+    if (valor.length > 11) valor = valor.slice(0, 11);
+
+    if (valor.length <= 10) {
+        valor = valor.replace(/^(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+    } else {
+        valor = valor.replace(/^(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+    }
+
+    inputTel.value = valor;
 });

@@ -42,21 +42,24 @@
 
     </header>
     <main class="main-contato">
+        <span class="span dadosEnviados"><i class="fas fa-check-circle"></i> Dados enviado com sucesso!</span>
+        <span class="span preenchaCampos">Preencha todos os campos!</span>
+        <span class="span emailInvalido">Email invalido!</span>
+        <h2 class="title">Entre em contato</h2>
         <form action="#">
-            <h2>Entre em contato</h2>
             <div class="form-inputs">
                 <label for="name">Nome:</label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome:">
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu email:">
+                <input type="email" name="email" id="email" placeholder="Digite seu email ex:">
                 <label for="tel">Telefone:</label>
-                <input type="number" name="tel" id="tel" placeholder="Digite seu telefone:">
+                <input type="tel" name="tel" id="tel" placeholder="(00) 00000-0000" maxlength="15">
                 <label for="msg">Mensagem:</label>
                 <textarea name="msg" id="msg" cols="68" rows="7" placeholder="Digite sua mensagem:"></textarea>
             </div>
             <div class="btns-form">
-                <input type="submit" name="btn" id="btn" class="btn-enviar">
-                <input type="reset" value="Limpar" class="btn-limpar">
+                <input type="submit" name="btnEnviar" id="btnEnviar" class="btnEnviar">
+                <input type="reset" value="Limpar" class="btnLimpar">
             </div>
         </form>
     </main>
@@ -64,10 +67,9 @@
     <footer>
         <p>Desenvolvido por <a href="#">Mauro Felix</a></p>
     </footer>
+    <script src="script.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
