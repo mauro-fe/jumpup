@@ -152,12 +152,13 @@ header {
 @keyframes jogar {
     from {
         transform: scale(50%);
-        background-color: #782904;
+        background-color: #3a1205;
+        color: #aaa;
 
     }
 
     do {
-        transform: scale(120%);
+        transform: scale(100%);
     }
 }
 

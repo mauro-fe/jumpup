@@ -42,6 +42,10 @@
 
 }
 
+footer {
+    margin-top: 200px;
+}
+
 @media (max-width: 800px) {
     .main-sobre {
         h2 {
