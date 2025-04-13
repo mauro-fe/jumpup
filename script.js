@@ -41,7 +41,9 @@ let dadosEnviados = document.querySelector(".dadosEnviados");
 let preenchaCampos = document.querySelector(".preenchaCampos");
 let emailInvalido = document.querySelector(".emailInvalido");
 
-// Funcão para validar os input
+// Começo funcão para validar os input
+
+// Funcão para mostrar pro usuário se o input foi enviado ou não
 btnEnviar.addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -70,6 +72,7 @@ btnEnviar.addEventListener("click", function (e) {
     }
 })
 
+// Limpar os inputs
 btnLimpar.addEventListener("click", function (e) {
     e.preventDefault();
     inputName.value = "";
@@ -78,6 +81,7 @@ btnLimpar.addEventListener("click", function (e) {
     inputText.value = "";
 })
 
+// Máscara para editar telefone conforme o usuário digita
 inputTel.addEventListener("input", function () {
 
     // Remove tudo que não é número
@@ -94,3 +98,5 @@ inputTel.addEventListener("input", function () {
 
     inputTel.value = valor;
 });
+
+// Fim funcão para validar os input
