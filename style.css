@@ -23,15 +23,16 @@ body {
 }
 
 .btn-header {
-    border: 2px solid #fff;
+    background-color: #e56f06;
     padding: 7px 10px;
     border-radius: 5px;
-    transition: all 1s;
+    transition: all .5s;
+    color: #fff;
+    font-weight: bold;
 }
 
 .btn-header:hover {
-    background-color: #121d1a;
-    color: #aaa;
+    background-color: #782904;
 }
 
 header.scrolled {
@@ -66,7 +67,6 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: #fff;
                     transition: all .5;
                 }
             }
@@ -124,7 +124,8 @@ header {
 }
 
 .btn-play {
-    background-color: #fff;
+    background-color: #e56f06;
+    font-size: 20px;
     padding: 5px 10px;
     max-width: min-content;
     margin: 0 auto;
@@ -133,14 +134,16 @@ header {
     font-weight: bold;
 
     a {
-        color: #000;
+        color: #fff;
         text-decoration: none;
     }
 }
 
 @keyframes jogar {
     from {
-        transform: scale(60%);
+        transform: scale(50%);
+        background-color: #782904;
+
     }
 
     do {
@@ -249,7 +252,4 @@ footer {
             width: 90%;
         }
     }
-
-
-
 }
