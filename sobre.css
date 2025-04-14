@@ -33,6 +33,10 @@
             margin: 0 auto;
 
         }
+
+        .btn-play {
+            margin-top: 20px;
+        }
     }
 
 }
