@@ -16,12 +16,25 @@
 
 @media (max-width: 1000px) {
     .main-jogo {
+        margin: 300px 0;
+
         iframe {
             display: none;
+
         }
 
-        p {
-            display: block;
+        section {
+            text-align: center;
+
+            p {
+                display: block;
+            }
+
+            i {
+                color: red;
+                font-size: 20px;
+            }
         }
     }
+
 }
