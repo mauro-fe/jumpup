@@ -32,7 +32,7 @@
     }
 
     .title {
-        margin-top: 50px;
+        margin-top: 150px;
         margin-bottom: 30px;
     }
 
@@ -103,6 +103,12 @@
             }
 
         }
+    }
+}
+
+@media (min-width: 2000px) {
+    footer {
+        margin-top: 200px;
     }
 }
 

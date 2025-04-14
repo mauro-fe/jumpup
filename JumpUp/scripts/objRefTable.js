@@ -13,7 +13,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text,
 		C3.Behaviors.Sin,
 		C3.Behaviors.Flash,
-		C3.Behaviors.jumpthru,
 		C3.Behaviors.Bullet,
 		C3.Behaviors.destroy,
 		C3.Plugins.Spritefont2,
@@ -85,7 +84,6 @@ self.C3_JsPropNameTable = [
 	{FaseUm: 0},
 	{FaseDois: 0},
 	{plataformaMexe: 0},
-	{PularAtravés: 0},
 	{Nuvem: 0},
 	{dragao: 0},
 	{Projétil: 0},
@@ -128,6 +126,7 @@ self.C3_JsPropNameTable = [
 	{Pontuacao: 0},
 	{Áudio: 0},
 	{Texto9: 0},
+	{PlanoDeFundoEmBlocos4: 0},
 	{velocidade: 0},
 	{alturaPersonagem: 0},
 	{Pontos: 0}
@@ -188,5 +187,6 @@ self.InstanceType = {
 	Sprite4: class extends self.ISpriteInstance {},
 	Pontuacao: class extends self.ITextInstance {},
 	Áudio: class extends self.IInstance {},
-	Texto9: class extends self.ITextInstance {}
+	Texto9: class extends self.ITextInstance {},
+	PlanoDeFundoEmBlocos4: class extends self.ITiledBackgroundInstance {}
 }
