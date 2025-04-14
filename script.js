@@ -52,7 +52,7 @@ const scrollTop = document.querySelector(".scrollTop");
 const btnScrollTop = document.querySelector(".btnScrollTop");
 
 function verificarScroll() {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 100) {
         btnScrollTop.style.display = "block";
     } else {
         btnScrollTop.style.display = "none";
