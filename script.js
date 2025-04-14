@@ -16,8 +16,12 @@ window.addEventListener("scroll", () => {
 const navbarIcon = document.getElementById("navbar-icon");
 const navbarMobile = document.querySelector(".navbar-mobile");
 
+
+
 navbarIcon.addEventListener("click", function () {
-    navbarMobile.classList.toggle("active");
+    setTimeout(function () {
+        navbarMobile.classList.toggle("active");
+    }, 500)
 
 })
 
@@ -36,67 +40,40 @@ let inputEmail = document.querySelector("#email");
 let inputTel = document.querySelector("#tel");
 let inputText = document.querySelector("#msg");
 let btnEnviar = document.querySelector(".btnEnviar");
-let btnLimpar = document.querySelector("btnLimpar")
+let btnLimpar = document.querySelector(".btnLimpar")
 let dadosEnviados = document.querySelector(".dadosEnviados");
 let preenchaCampos = document.querySelector(".preenchaCampos");
 let emailInvalido = document.querySelector(".emailInvalido");
 
-// Começo funcão para validar os input
 
-// Funcão para mostrar pro usuário se o input foi enviado ou não
-btnEnviar.addEventListener("click", function (e) {
-    e.preventDefault();
 
-    // Expressão regular para validar e-mail
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const scrollTop = document.querySelector(".scrollTop");
 
-    if (inputName.value === "" || inputEmail.value === "" || inputTel.value === "") {
-        preenchaCampos.classList.add("invalido")
-        setTimeout(function () {
-            preenchaCampos.classList.remove("invalido")
-        }, 2000)
-    } else if (!regex.test(inputEmail.value)) {
-        emailInvalido.classList.add("invalido")
-        setTimeout(function () {
-            emailInvalido.classList.remove("invalido")
-        }, 2000)
+const btnScrollTop = document.querySelector(".btnScrollTop");
+
+function verificarScroll() {
+    if (window.scrollY > 200) {
+        btnScrollTop.style.display = "block";
     } else {
-        dadosEnviados.classList.add("valido")
-        setTimeout(function () {
-            dadosEnviados.classList.remove("valido")
-            inputName.value = "";
-            inputEmail.value = "";
-            inputTel.value = "";
-            inputText.value = "";
-        }, 2000)
+        btnScrollTop.style.display = "none";
     }
-})
+}
 
-// Limpar os inputs
-btnLimpar.addEventListener("click", function (e) {
-    e.preventDefault();
-    inputName.value = "";
-    inputEmail.value = "";
-    inputTel.value = "";
-    inputText.value = "";
-})
+// Verifica ao rolar
+window.addEventListener("scroll", verificarScroll);
 
-// Máscara para editar telefone conforme o usuário digita
-inputTel.addEventListener("input", function () {
+// Verifica ao carregar a página
+window.addEventListener("load", verificarScroll);
 
-    // Remove tudo que não é número
-    let valor = inputTel.value.replace(/\D/g, '');
+// Opcional: se você estiver usando SPA ou frameworks (tipo AJAX, Vue, etc.)
+// pode usar também:
+document.addEventListener("DOMContentLoaded", verificarScroll);
 
-    // Limita a 11 dígitos
-    if (valor.length > 11) valor = valor.slice(0, 11);
 
-    if (valor.length <= 10) {
-        valor = valor.replace(/^(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
-    } else {
-        valor = valor.replace(/^(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
-    }
-
-    inputTel.value = valor;
+btnScrollTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
-
-// Fim funcão para validar os input
+window.addEventListener("load", verificarScroll);
