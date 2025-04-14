@@ -25,13 +25,14 @@
 
         section {
             text-align: center;
+            width: 90%;
 
             p {
                 display: block;
                 background-color: #0009;
                 padding: 40px 30px;
                 border-radius: 10px;
-                width: 80%;
+
             }
 
             i {
