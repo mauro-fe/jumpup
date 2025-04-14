@@ -16,7 +16,7 @@
 
 @media (max-width: 1000px) {
     .main-jogo {
-        margin: 300px 0;
+        margin: 150px 0;
 
         iframe {
             display: none;
