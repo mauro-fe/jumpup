@@ -30,20 +30,6 @@ window.addEventListener("resize", function () {
 
 // FIM NAVBAR
 
-// COMEÇO CONTATO
-
-let inputName = document.querySelector("#nome");
-let inputEmail = document.querySelector("#email");
-let inputTel = document.querySelector("#tel");
-let inputText = document.querySelector("#msg");
-let btnEnviar = document.querySelector(".btnEnviar");
-let btnLimpar = document.querySelector(".btnLimpar")
-let dadosEnviados = document.querySelector(".dadosEnviados");
-let preenchaCampos = document.querySelector(".preenchaCampos");
-let emailInvalido = document.querySelector(".emailInvalido");
-
-
-
 const scrollTop = document.querySelector(".scrollTop");
 
 const btnScrollTop = document.querySelector(".btnScrollTop");

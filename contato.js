@@ -1,3 +1,14 @@
+// COMEÇO CONTATO
+
+let inputName = document.querySelector("#nome");
+let inputEmail = document.querySelector("#email");
+let inputTel = document.querySelector("#tel");
+let inputText = document.querySelector("#msg");
+let btnEnviar = document.querySelector(".btnEnviar");
+let btnLimpar = document.querySelector(".btnLimpar")
+let validacao = document.querySelector(".validacao");
+
+
 // Começo funcão para validar os input
 
 // Funcão para mostrar pro se o input foi enviado ou não
@@ -8,19 +19,22 @@ btnEnviar.addEventListener("click", function (e) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (inputName.value === "" || inputEmail.value === "" || inputTel.value === "") {
-        preenchaCampos.classList.add("invalido")
+        validacao.classList.add("invalido")
+        validacao.innerHTML = "Preencha todos os campos!"
         setTimeout(function () {
-            preenchaCampos.classList.remove("invalido")
+            validacao.classList.remove("invalido")
         }, 2000)
     } else if (!regex.test(inputEmail.value)) {
-        emailInvalido.classList.add("invalido")
+        validacao.classList.add("invalido")
+        validacao.innerHTML = "Email invalido!"
         setTimeout(function () {
-            emailInvalido.classList.remove("invalido")
+            validacao.classList.remove("invalido")
         }, 2000)
     } else {
-        dadosEnviados.classList.add("valido")
+        validacao.classList.add("valido")
+        validacao.innerHTML = "Dados enviados com sucesso!"
         setTimeout(function () {
-            dadosEnviados.classList.remove("valido")
+            validacao.classList.remove("valido")
             inputName.value = "";
             inputEmail.value = "";
             inputTel.value = "";
