@@ -16,13 +16,10 @@ window.addEventListener("scroll", () => {
 const navbarIcon = document.getElementById("navbar-icon");
 const navbarMobile = document.querySelector(".navbar-mobile");
 
-
-
 navbarIcon.addEventListener("click", function () {
     setTimeout(function () {
         navbarMobile.classList.toggle("active");
     }, 500)
-
 })
 
 window.addEventListener("resize", function () {

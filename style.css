@@ -44,17 +44,22 @@ body {
     right: 30px;
     bottom: 30px;
     padding: 10px;
-    background-color: #3a1205;
+    background-color: #3a120599;
     border-radius: 10px;
     position: fixed;
     cursor: pointer;
+    transition: background-color .7s;
+}
+
+.btnScrollTop:hover {
+    background-color: #3a1205;
 }
 
 .btn-header:hover {
     background-color: #782904;
 }
 
-header.btnScrollTop {
+header.scrolled {
     opacity: 0.7;
 }
 
