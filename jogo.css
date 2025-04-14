@@ -28,6 +28,9 @@
 
             p {
                 display: block;
+                background-color: #0009;
+                padding: 40px 30px;
+                border-radius: 10px;
             }
 
             i {
