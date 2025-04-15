@@ -1,5 +1,34 @@
+// Inicio botão de scroll da página para o topo
+const scrollTop = document.querySelector(".scrollTop");
+const btnScrollTop = document.querySelector(".btnScrollTop");
+
+// Verifica aonde está o scroll ao rolar a página
+function verificarScroll() {
+    // Se tiver maior que 100 o botão aparece caso contrário some
+    if (window.scrollY > 100) {
+        btnScrollTop.style.display = "block";
+    } else {
+        btnScrollTop.style.display = "none";
+    }
+}
+
+// Verifica ao rolar o scroll
+window.addEventListener("scroll", verificarScroll);
+
+// Verifica ao carregar a página
+window.addEventListener("load", verificarScroll);
+
+// Botã
+btnScrollTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+// Fim botão de scroll da página para o topo
+
 // COMEÇO HEADER
-// Fazer scroll suave do header
+// Fazer header fixo suave
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
@@ -12,7 +41,6 @@ window.addEventListener("scroll", () => {
 // FIM HEADER
 
 // INICIO NAVBAR
-
 const navbarIcon = document.getElementById("navbar-icon");
 const navbarMobile = document.querySelector(".navbar-mobile");
 
@@ -27,36 +55,5 @@ window.addEventListener("resize", function () {
         navbarMobile.classList.remove("active");
     }
 });
-
 // FIM NAVBAR
 
-const scrollTop = document.querySelector(".scrollTop");
-
-const btnScrollTop = document.querySelector(".btnScrollTop");
-
-function verificarScroll() {
-    if (window.scrollY > 100) {
-        btnScrollTop.style.display = "block";
-    } else {
-        btnScrollTop.style.display = "none";
-    }
-}
-
-// Verifica ao rolar
-window.addEventListener("scroll", verificarScroll);
-
-// Verifica ao carregar a página
-window.addEventListener("load", verificarScroll);
-
-// Opcional: se você estiver usando SPA ou frameworks (tipo AJAX, Vue, etc.)
-// pode usar também:
-document.addEventListener("DOMContentLoaded", verificarScroll);
-
-
-btnScrollTop.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-window.addEventListener("load", verificarScroll);

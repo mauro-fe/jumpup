@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background: url(img/fundo.png) no-repeat;
     background-size: cover;
