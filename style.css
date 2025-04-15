@@ -59,9 +59,12 @@ a {
     background-color: #3a1205;
 }
 
-.btn-header:hover {
-    background-color: #782904;
+.btn-header:hover{
+    box-shadow: 4px 4px 6px 1px #fff;
+
 }
+
+
 
 header.scrolled {
     opacity: 0.7;
@@ -90,17 +93,17 @@ header {
             list-style: none;
             display: flex;
 
-            li {
+            .btn-headerli {
                 margin: 0 25px;
-                transition: all 1s;
+                transition: all .8s;
 
-                a {
+                .btn-header {
                     text-decoration: none;
-                    transition: all .5;
+                    transition: all .8;
                 }
             }
 
-            li:hover {
+            .btn-headerli:hover {
                 transform: translate(5px, 5px);
             }
         }
@@ -152,12 +155,12 @@ header {
 }
 
 .btn-play {
-    background-color: #e56f06;
+    background-color: red;
     font-size: 20px;
-    padding: 5px 10px;
+    padding: 3px 12px;
     max-width: max-content;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 40px;
     animation: jogar .8s infinite alternate;
     font-weight: bold;
 
@@ -169,8 +172,8 @@ header {
 
 @keyframes jogar {
     from {
-        transform: scale(50%);
-        background-color: #3a1205;
+        transform: scale(60%);
+        background-color:#ff000088;
         color: #aaa;
 
     }
@@ -268,7 +271,7 @@ footer {
             border-radius: 5px;
             text-align: center;
 
-            li {
+            .btn-headerli {
 
                 width: 120px;
             }
