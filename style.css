@@ -207,6 +207,7 @@ footer {
 
     i:hover {
         transform: scale(120%);
+        box-shadow: 0 0 6px 3px #fff;
     }
 
     .fa-instagram {
