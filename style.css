@@ -9,10 +9,6 @@
     padding: 0;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 body {
     background: url(img/fundo.png) no-repeat;
     background-size: cover;
@@ -64,12 +60,9 @@ a {
     background-color: #3a1205;
 }
 
-.btn-header:hover{
-    box-shadow: 4px 4px 6px 1px #fff;
-
+.btn-header:hover {
+    background-color: #782904;
 }
-
-
 
 header.scrolled {
     opacity: 0.7;
@@ -98,17 +91,17 @@ header {
             list-style: none;
             display: flex;
 
-            .btn-headerli {
+            li {
                 margin: 0 25px;
-                transition: all .8s;
+                transition: all 1s;
 
-                .btn-header {
+                a {
                     text-decoration: none;
-                    transition: all .8;
+                    transition: all .5;
                 }
             }
 
-            .btn-headerli:hover {
+            li:hover {
                 transform: translate(5px, 5px);
             }
         }
@@ -160,12 +153,12 @@ header {
 }
 
 .btn-play {
-    background-color: red;
+    background-color: #e56f06;
     font-size: 20px;
-    padding: 3px 12px;
+    padding: 5px 10px;
     max-width: max-content;
     margin: 0 auto;
-    border-radius: 40px;
+    border-radius: 5px;
     animation: jogar .8s infinite alternate;
     font-weight: bold;
 
@@ -177,8 +170,8 @@ header {
 
 @keyframes jogar {
     from {
-        transform: scale(60%);
-        background-color:#ff000088;
+        transform: scale(50%);
+        background-color: #3a1205;
         color: #aaa;
 
     }
@@ -215,7 +208,6 @@ footer {
 
     i:hover {
         transform: scale(120%);
-        box-shadow: 0 0 6px 3px #fff;
     }
 
     .fa-instagram {
@@ -276,7 +268,7 @@ footer {
             border-radius: 5px;
             text-align: center;
 
-            .btn-headerli {
+            li {
 
                 width: 120px;
             }
