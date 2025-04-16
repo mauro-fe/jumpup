@@ -13,6 +13,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 body {
     background: url(img/fundo.png) no-repeat;
     background-size: cover;
@@ -41,7 +42,6 @@ a {
     background-color: #e56f06;
     padding: 7px 10px;
     border-radius: 5px;
-    transition: all .5s;
     color: #fff;
     font-weight: bold;
 }
@@ -62,13 +62,6 @@ a {
 .btnScrollTop:hover {
     background-color: #3a1205;
 }
-
-.btn-header:hover{
-    box-shadow: 4px 4px 6px 1px #fff;
-
-}
-
-
 
 header.scrolled {
     opacity: 0.7;
@@ -105,10 +98,6 @@ header {
                     text-decoration: none;
                     transition: all .8;
                 }
-            }
-
-            .btn-headerli:hover {
-                transform: translate(5px, 5px);
             }
         }
     }
@@ -330,4 +319,26 @@ footer {
             font-size: 16px;
         }
     }
+}
+.btn-header{
+    transition: .2s;
+}
+.btn-header:hover{
+    box-shadow: 0 0 5px 3px #fff;
+}
+
+.btn-headerli:hover{
+    transform: scale(1.1); /* encolhe um pouquinho ao clicar */
+}
+
+.btn-headerli {
+    transition: transform 0.1s;
+  }
+  
+.btn-headerli:active {  
+    transform: scale(0.9); /* encolhe um pouquinho ao clicar */
+  }
+
+  .btn-header:active{
+    box-shadow: 0 0 2px 1px #fff;
 }
