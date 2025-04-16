@@ -46,6 +46,30 @@ a {
     font-weight: bold;
 }
 
+.btn-header{
+    transition: .2s;
+}
+.btn-header:hover{
+    box-shadow: 0 0 5px 3px #fff;
+}
+
+.btn-headerli:hover{
+    transform: scale(1.1); /* encolhe um pouquinho ao clicar */
+}
+
+.btn-headerli {
+    transition: transform 0.1s;
+  }
+  
+.btn-headerli:active {  
+    transform: scale(0.9); /* encolhe um pouquinho ao clicar */
+  }
+
+  .btn-header:active{
+    box-shadow: 0 0 2px 1px #fff;
+}
+
+
 .btnScrollTop {
     font-size: 20px;
     position: absolute;
@@ -92,11 +116,9 @@ header {
 
             .btn-headerli {
                 margin: 0 25px;
-                transition: all .8s;
 
                 .btn-header {
                     text-decoration: none;
-                    transition: all .8;
                 }
             }
         }
@@ -319,26 +341,4 @@ footer {
             font-size: 16px;
         }
     }
-}
-.btn-header{
-    transition: .2s;
-}
-.btn-header:hover{
-    box-shadow: 0 0 5px 3px #fff;
-}
-
-.btn-headerli:hover{
-    transform: scale(1.1); /* encolhe um pouquinho ao clicar */
-}
-
-.btn-headerli {
-    transition: transform 0.1s;
-  }
-  
-.btn-headerli:active {  
-    transform: scale(0.9); /* encolhe um pouquinho ao clicar */
-  }
-
-  .btn-header:active{
-    box-shadow: 0 0 2px 1px #fff;
 }
