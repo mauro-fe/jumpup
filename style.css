@@ -13,7 +13,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 body {
     background: url(img/fundo.png) no-repeat;
     background-size: cover;
@@ -23,6 +22,7 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+
 }
 
 a {
@@ -45,30 +45,6 @@ a {
     color: #fff;
     font-weight: bold;
 }
-
-.btn-header{
-    transition: .2s;
-}
-.btn-header:hover{
-    box-shadow: 0 0 5px 3px #fff;
-}
-
-.btn-headerli:hover{
-    transform: scale(1.1); /* encolhe um pouquinho ao clicar */
-}
-
-.btn-headerli {
-    transition: transform 0.1s;
-  }
-  
-.btn-headerli:active {  
-    transform: scale(0.9); /* encolhe um pouquinho ao clicar */
-  }
-
-  .btn-header:active{
-    box-shadow: 0 0 2px 1px #fff;
-}
-
 
 .btnScrollTop {
     font-size: 20px;
@@ -114,12 +90,18 @@ header {
             list-style: none;
             display: flex;
 
-            .btn-headerli {
+            li {
                 margin: 0 25px;
+                transition: all .8s;
 
-                .btn-header {
+                a {
                     text-decoration: none;
+                    transition: all .8;
                 }
+            }
+
+            .btn-headerli:hover {
+                transform: translate(5px, 5px);
             }
         }
     }
@@ -170,12 +152,12 @@ header {
 }
 
 .btn-play {
-    background-color: red;
+    background-color: #e56f06;
     font-size: 20px;
-    padding: 3px 12px;
+    padding: 5px 10px;
     max-width: max-content;
     margin: 0 auto;
-    border-radius: 40px;
+    border-radius: 5px;
     animation: jogar .8s infinite alternate;
     font-weight: bold;
 
@@ -187,8 +169,8 @@ header {
 
 @keyframes jogar {
     from {
-        transform: scale(60%);
-        background-color:#ff000088;
+        transform: scale(50%);
+        background-color: #3a1205;
         color: #aaa;
 
     }
@@ -224,8 +206,8 @@ footer {
     }
 
     i:hover {
-        transform: scale(120%);
-        box-shadow: 0 0 6px 3px #fff;
+        transform: scale(1.2);
+        box-shadow: 0 0 5px 3px #fff;
     }
 
     .fa-instagram {
@@ -286,7 +268,7 @@ footer {
             border-radius: 5px;
             text-align: center;
 
-            .btn-headerli {
+            li {
 
                 width: 120px;
             }
