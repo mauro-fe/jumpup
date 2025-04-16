@@ -43,6 +43,14 @@ a {
     font-weight: bold;
 }
 
+.btn-headerli:hover {
+    transform: scale(1.1);
+}
+
+.btn-header:hover {
+    box-shadow: 0 0 5px 2px #fff;
+}
+
 .btnScrollTop {
     font-size: 20px;
     position: absolute;
@@ -58,10 +66,6 @@ a {
 
 .btnScrollTop:hover {
     background-color: #3a1205;
-}
-
-.btn-header:hover {
-    background-color: #782904;
 }
 
 header.scrolled {
@@ -101,9 +105,6 @@ header {
                 }
             }
 
-            li:hover {
-                transform: translate(5px, 5px);
-            }
         }
     }
 
@@ -207,7 +208,8 @@ footer {
     }
 
     i:hover {
-        transform: scale(120%);
+        transform: scale(1.2);
+        box-shadow: 0 0 5px 3px #fff;
     }
 
     .fa-instagram {
