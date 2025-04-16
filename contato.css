@@ -80,7 +80,6 @@
 
             input:hover {
                 background-color: #982b0288;
-                transform: scale(110%);
                 box-shadow: 0 0 5px 3px #fff;
             }
 
