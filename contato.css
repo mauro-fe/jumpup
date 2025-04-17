@@ -1,3 +1,7 @@
+body {
+    min-height: 100vh;
+}
+
 .main-contato {
     display: flex;
     flex-direction: column;
@@ -113,7 +117,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .main-contato {
         .form-inputs {
             width: 300px;
@@ -132,5 +136,9 @@
                 font-size: 16px;
             }
         }
+    }
+
+    footer {
+        margin-top: 90px;
     }
 }
