@@ -1,8 +1,9 @@
 .main-jogo {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 300px;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
 
     iframe {
         width: 900px;
@@ -24,16 +25,11 @@
 
 @media (max-width: 1000px) {
     .main-jogo {
+  
         margin: 150px 0;
-
-        iframe {
-            display: none;
-
-        }
-
         section {
             text-align: center;
-            width: 90%;
+            width: 350px;
 
             p {
                 display: block;
@@ -50,4 +46,13 @@
         }
     }
 
+}
+
+@media (max-width: 600px) {
+    .main-jogo {
+        iframe {
+            width: 350px;
+            height: 198px;
+        }
+    }
 }

@@ -145,11 +145,6 @@ header {
     margin-top: 100px;
     margin-bottom: 200px;
 
-    video {
-        border-radius: 15px;
-        width: 50%;
-    }
-
     .title {
         margin-top: 80px;
         margin-bottom: 20px;
@@ -254,8 +249,9 @@ footer {
 
 @media (max-width: 1300px) {
     .main-index {
-        img {
-            width: 80%;
+        video {
+            border-radius: 15px;
+            width:90%;
         }
     }
 }
@@ -307,6 +303,7 @@ footer {
         article {
             font-size: 14px;
             width: 80%;
+    
         }
     }
 
