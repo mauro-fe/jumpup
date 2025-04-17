@@ -144,6 +144,9 @@ header {
     align-items: center;
     margin-top: 100px;
     margin-bottom: 200px;
+    video{
+        width: 60%;
+    }
 
     .title {
         margin-top: 80px;
