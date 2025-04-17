@@ -45,9 +45,7 @@ const navbarIcon = document.getElementById("navbar-icon");
 const navbarMobile = document.querySelector(".navbar-mobile");
 
 navbarIcon.addEventListener("click", function () {
-    setTimeout(function () {
-        navbarMobile.classList.toggle("active");
-    }, 500)
+    navbarMobile.classList.toggle("active");
 })
 
 window.addEventListener("resize", function () {
