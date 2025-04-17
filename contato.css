@@ -74,8 +74,13 @@
                 border-radius: 5px;
                 color: #fff;
                 cursor: pointer;
-                transition: all .5s;
+                transition: all .3s;
                 font-weight: bold;
+            }
+
+            input:active {
+                transform: scale(.8);
+
             }
 
             input:hover {
@@ -92,7 +97,8 @@
             .btnLimpar {
                 background-color: #982b02;
             }
-            .btnLimpar:hover{
+
+            .btnLimpar:hover {
                 background-color: #dd6805;
                 color: #000;
 

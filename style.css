@@ -233,6 +233,10 @@ footer {
         box-shadow: 0 0 5px 3px #fff;
     }
 
+    i:active {
+        transform: scale(.9);
+    }
+
     .fa-instagram {
         background-color: #fe2879;
     }
