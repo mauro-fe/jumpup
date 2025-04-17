@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: 50px;
     align-items: center;
-
+    margin: 200px 0;
     iframe {
         width: 900px;
         height: 507px;
@@ -25,11 +25,16 @@
 
 @media (max-width: 1000px) {
     .main-jogo {
+        iframe {
+            width: 600px;
+            height: 342.9px;
+            margin: 0;
+        }
   
         margin: 150px 0;
         section {
             text-align: center;
-            width: 350px;
+            width: 450px;
 
             p {
                 display: block;
